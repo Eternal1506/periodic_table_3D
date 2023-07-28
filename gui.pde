@@ -1,0 +1,306 @@
+/* =========================================================
+ * ====                   WARNING                        ===
+ * =========================================================
+ * The code in this tab has been generated from the GUI form
+ * designer and care should be taken when editing this file.
+ * Only add/edit code inside the event handlers i.e. only
+ * use lines between the matching comment tags. e.g.
+
+ void myBtnEvents(GButton button) { //_CODE_:button1:12356:
+     // It is safe to enter your event code here  
+ } //_CODE_:button1:12356:
+ 
+ * Do not rename this tab!
+ * =========================================================
+ */
+
+public void H_click1(GButton source, GEvent event) { //_CODE_:H:779091:
+// making all the buttons for the elements
+  currAtom = 1;
+  makeAtom();
+} //_CODE_:H:779091:
+
+public void Li_click1(GButton source, GEvent event) { //_CODE_:Li:694679:
+  currAtom = 3;
+  makeAtom();
+} //_CODE_:Li:694679:
+
+public void Na_click1(GButton source, GEvent event) { //_CODE_:Na:700031:
+  currAtom = 11;
+  makeAtom();
+} //_CODE_:Na:700031:
+
+public void be_click1(GButton source, GEvent event) { //_CODE_:Be:398641:
+  currAtom = 4;
+  makeAtom();
+} //_CODE_:Be:398641:
+
+public void B_click1(GButton source, GEvent event) { //_CODE_:B:966904:
+  currAtom = 5;
+  makeAtom();
+} //_CODE_:B:966904:
+
+public void C_click1(GButton source, GEvent event) { //_CODE_:C:578682:
+  currAtom = 6;
+  makeAtom();
+} //_CODE_:C:578682:
+
+public void N_click1(GButton source, GEvent event) { //_CODE_:N:546996:
+  currAtom = 7;
+  makeAtom();
+} //_CODE_:N:546996:
+
+public void O_click1(GButton source, GEvent event) { //_CODE_:O:342391:
+  currAtom = 8;
+  makeAtom();
+} //_CODE_:O:342391:
+
+public void F_click1(GButton source, GEvent event) { //_CODE_:F:587653:
+  currAtom = 9;
+  makeAtom();
+} //_CODE_:F:587653:
+
+public void Ne_click1(GButton source, GEvent event) { //_CODE_:Ne:402446:
+  currAtom = 10;
+  makeAtom();
+} //_CODE_:Ne:402446:
+
+public void Mg_click1(GButton source, GEvent event) { //_CODE_:Mg:423866:
+  currAtom = 12;
+  makeAtom();
+} //_CODE_:Mg:423866:
+
+public void Al_click1(GButton source, GEvent event) { //_CODE_:Al:419330:
+  currAtom = 13;
+  makeAtom();
+} //_CODE_:Al:419330:
+
+public void Si_click1(GButton source, GEvent event) { //_CODE_:Si:907439:
+  currAtom = 14;
+  makeAtom();
+} //_CODE_:Si:907439:
+
+public void P_click1(GButton source, GEvent event) { //_CODE_:P:297941:
+  currAtom = 15;
+  makeAtom();
+} //_CODE_:P:297941:
+
+public void S_click1(GButton source, GEvent event) { //_CODE_:S:486232:
+  currAtom = 16;
+  makeAtom();
+} //_CODE_:S:486232:
+
+public void Cl_click1(GButton source, GEvent event) { //_CODE_:Cl:985922:
+  currAtom = 17;
+  makeAtom();
+} //_CODE_:Cl:985922:
+
+public void Ar_click1(GButton source, GEvent event) { //_CODE_:Ar:686439:
+  currAtom = 18;
+  makeAtom();
+} //_CODE_:Ar:686439:
+
+public void He_click1(GButton source, GEvent event) { //_CODE_:He:542582:
+  currAtom = 2;
+  makeAtom();
+} //_CODE_:He:542582:
+
+public void pervious_click1(GButton source, GEvent event) { //_CODE_:previous:274852:
+  if (currAtom != 1){ // goes back to the last atom 
+    currAtom -= 1;
+    makeAtom();
+    lastmouseY = 0;
+    lastmouseX = 0;
+  }
+} //_CODE_:previous:274852:
+
+public void next_click1(GButton source, GEvent event) { //_CODE_:next:950509:
+  if (currAtom != 18){ // goes to the next atom
+    currAtom += 1;
+    makeAtom();
+    lastmouseY = 0;
+    lastmouseX = 0;
+  }
+} //_CODE_:next:950509:
+
+public void moveE_clicked1(GCheckbox source, GEvent event) { //_CODE_:moveE:649158:
+  pause =! pause; // check box for animating the electrons
+  moveE.setSelected(!pause);
+} //_CODE_:moveE:649158:
+
+public void showOrb_clicked1(GCheckbox source, GEvent event) { //_CODE_:showOrb:937114:
+  showorb = !showorb; // check box for shwosing shells
+  showOrb.setSelected(showorb);
+} //_CODE_:showOrb:937114:
+
+public void back_click1(GButton source, GEvent event) { //_CODE_:back:760882:
+  maketable(); // goes back to the main screeen
+} //_CODE_:back:760882:
+
+public void AlkaliM_click1(GButton source, GEvent event) { //_CODE_:AlkaliM:389649:
+  AlkaliMetals();
+} //_CODE_:AlkaliM:389649:
+
+public void AlkalineEM_click1(GButton source, GEvent event) { //_CODE_:AlkalineEM:924361:
+  AlkalineEarthMetals();
+} //_CODE_:AlkalineEM:924361:
+
+public void PTM_click1(GButton source, GEvent event) { //_CODE_:PTM:651724:
+  PostTransMetals();
+} //_CODE_:PTM:651724:
+
+public void Metalliods_click1(GButton source, GEvent event) { //_CODE_:Metalliods:452986:
+  Metalloids();
+} //_CODE_:Metalliods:452986:
+
+public void NonMetals_click1(GButton source, GEvent event) { //_CODE_:NonMetals:436327:
+  OtherNonMetals();
+} //_CODE_:NonMetals:436327:
+
+public void Halogens_click1(GButton source, GEvent event) { //_CODE_:Halogens:385824:
+  Halogens();
+} //_CODE_:Halogens:385824:
+
+public void NobleGas_click1(GButton source, GEvent event) { //_CODE_:NobleGas:569692:
+  Nobelgases();
+} //_CODE_:NobleGas:569692:
+
+
+
+// Create all the GUI controls. 
+// autogenerated do not edit
+public void createGUI(){
+  G4P.messagesEnabled(false);
+  G4P.setGlobalColorScheme(GCScheme.BLUE_SCHEME);
+  G4P.setMouseOverEnabled(false);
+  surface.setTitle("Sketch Window");
+  H = new GButton(this, 100, 300, 100, 100);
+  H.setIcon("Hydrogen.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  H.addEventHandler(this, "H_click1");
+  Li = new GButton(this, 100, 430, 100, 100);
+  Li.setIcon("Lithum.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  Li.addEventHandler(this, "Li_click1");
+  Na = new GButton(this, 100, 560, 100, 100);
+  Na.setIcon("Sodium.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  Na.addEventHandler(this, "Na_click1");
+  Be = new GButton(this, 230, 430, 100, 100);
+  Be.setIcon("Berliyum.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  Be.addEventHandler(this, "be_click1");
+  B = new GButton(this, 360, 430, 100, 100);
+  B.setIcon("Boron.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  B.addEventHandler(this, "B_click1");
+  C = new GButton(this, 490, 430, 100, 100);
+  C.setIcon("Carbon .jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  C.addEventHandler(this, "C_click1");
+  N = new GButton(this, 620, 430, 100, 100);
+  N.setIcon("Nitrogen.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  N.addEventHandler(this, "N_click1");
+  O = new GButton(this, 750, 430, 100, 100);
+  O.setIcon("Oxygen.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  O.addEventHandler(this, "O_click1");
+  F = new GButton(this, 880, 430, 100, 100);
+  F.setIcon("Flourine.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  F.addEventHandler(this, "F_click1");
+  Ne = new GButton(this, 1010, 430, 100, 100);
+  Ne.setIcon("Neon.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  Ne.addEventHandler(this, "Ne_click1");
+  Mg = new GButton(this, 230, 560, 100, 100);
+  Mg.setIcon("Magnesium.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  Mg.addEventHandler(this, "Mg_click1");
+  Al = new GButton(this, 360, 560, 100, 100);
+  Al.setIcon("Aluminium.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  Al.addEventHandler(this, "Al_click1");
+  Si = new GButton(this, 490, 560, 100, 100);
+  Si.setIcon("Silicon.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  Si.addEventHandler(this, "Si_click1");
+  P = new GButton(this, 620, 560, 100, 100);
+  P.setIcon("Phosporus.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  P.addEventHandler(this, "P_click1");
+  S = new GButton(this, 750, 560, 100, 100);
+  S.setIcon("Sulphur.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  S.addEventHandler(this, "S_click1");
+  Cl = new GButton(this, 880, 560, 100, 100);
+  Cl.setIcon("Chlrorine.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  Cl.addEventHandler(this, "Cl_click1");
+  Ar = new GButton(this, 1010, 560, 100, 100);
+  Ar.setIcon("Argon.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  Ar.addEventHandler(this, "Ar_click1");
+  He = new GButton(this, 1010, 300, 100, 100);
+  He.setIcon("Helium.jpg", 1, GAlign.EAST, GAlign.CENTER, GAlign.MIDDLE);
+  He.addEventHandler(this, "He_click1");
+  previous = new GButton(this, 10, 500, 80, 50);
+  previous.setText("Previous");
+  previous.addEventHandler(this, "pervious_click1");
+  next = new GButton(this, 1110, 500, 80, 50);
+  next.setText("Next");
+  next.addEventHandler(this, "next_click1");
+  moveE = new GCheckbox(this, 1000, 65, 200, 50);
+  moveE.setIconAlign(GAlign.LEFT, GAlign.MIDDLE);
+  moveE.setText("Show rotation of electrons");
+  moveE.setOpaque(false);
+  moveE.addEventHandler(this, "moveE_clicked1");
+  moveE.setSelected(true);
+  showOrb = new GCheckbox(this, 1000, 120, 200, 50);
+  showOrb.setIconAlign(GAlign.LEFT, GAlign.MIDDLE);
+  showOrb.setText("Show orbits");
+  showOrb.setOpaque(false);
+  showOrb.addEventHandler(this, "showOrb_clicked1");
+  showOrb.setSelected(true);
+  back = new GButton(this, 1050, 20, 100, 40);
+  back.setText("Back to the table");
+  back.addEventHandler(this, "back_click1");
+  AlkaliM = new GButton(this, 100, 800, 80, 50);
+  AlkaliM.setText("Alkali Metals");
+  AlkaliM.addEventHandler(this, "AlkaliM_click1");
+  AlkalineEM = new GButton(this, 250, 800, 80, 50);
+  AlkalineEM.setText("Alkaline Earth Metals");
+  AlkalineEM.addEventHandler(this, "AlkalineEM_click1");
+  PTM = new GButton(this, 400, 800, 80, 50);
+  PTM.setText("Post-Transition Metals");
+  PTM.addEventHandler(this, "PTM_click1");
+  Metalliods = new GButton(this, 550, 800, 80, 50);
+  Metalliods.setText("Metalliods");
+  Metalliods.addEventHandler(this, "Metalliods_click1");
+  NonMetals = new GButton(this, 700, 800, 80, 50);
+  NonMetals.setText("Other Non-Metals");
+  NonMetals.addEventHandler(this, "NonMetals_click1");
+  Halogens = new GButton(this, 850, 800, 80, 50);
+  Halogens.setText("Halogens");
+  Halogens.addEventHandler(this, "Halogens_click1");
+  NobleGas = new GButton(this, 1000, 800, 80, 50);
+  NobleGas.setText("Noble Gas");
+  NobleGas.addEventHandler(this, "NobleGas_click1");
+}
+
+// Variable declarations 
+// autogenerated do not edit
+GButton H; 
+GButton Li; 
+GButton Na; 
+GButton Be; 
+GButton B; 
+GButton C; 
+GButton N; 
+GButton O; 
+GButton F; 
+GButton Ne; 
+GButton Mg; 
+GButton Al; 
+GButton Si; 
+GButton P; 
+GButton S; 
+GButton Cl; 
+GButton Ar; 
+GButton He; 
+GButton previous; 
+GButton next; 
+GCheckbox moveE; 
+GCheckbox showOrb; 
+GButton back; 
+GButton AlkaliM; 
+GButton AlkalineEM; 
+GButton PTM; 
+GButton Metalliods; 
+GButton NonMetals; 
+GButton Halogens; 
+GButton NobleGas; 
